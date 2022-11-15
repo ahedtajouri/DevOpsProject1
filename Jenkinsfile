@@ -8,7 +8,6 @@
                 git branch: 'main', url: 'https://github.com/ahedtajouri/DevOpsProject1.git'
             }
         }
-         stage{
         stage('unit testing'){
             steps{
                sh 'mvn test'
@@ -16,4 +15,4 @@
         }
     }
  }
- }
+ 
