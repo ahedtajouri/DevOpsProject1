@@ -8,12 +8,12 @@
                 git branch: 'main', url: 'https://github.com/ahedtajouri/DevOpsProject1.git'
             }
         }
-        stage('unit testing'){
+        /*stage('unit testing'){
             steps{
                sh 'mvn test'
             }
-        }
-        stage('integretion testing '){
+        }*/
+        stage('Integration testing '){
             steps{
                 sh'mvn verify -DskipUnitTests'
             }
