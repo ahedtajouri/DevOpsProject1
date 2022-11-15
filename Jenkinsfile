@@ -13,6 +13,11 @@
                sh 'mvn test'
             }
         }
+        stage('integretion testing '){
+            steps{
+                sh'mvn verify -DskipUnitTests'
+            }
+        }
     }
  }
  
